@@ -46,11 +46,11 @@ public class MAILSEND extends LOGINUSER			//CLASS WITH PARENT CLASS USING EXTEND
 	private void sendEmail() throws MessagingException 			//SEND MAIL METHOD
 	{
 		// TODO Auto-generated method stub
-		String user = "kumarsahuatish@gmail.com";
-		String fromUserPassword = "nvfkvbjssumtvhiv";				//nvfkvbjssumtvhiv
+		String user = "Enter Sender Mail";
+		String fromUserPassword = "Sender Mail Password";				
 		String emailHost = "smtp.gamil.com";
 		Transport t = newSession.getTransport("smtp");
-		t.connect("smtp.gmail.com", "kumarsahuatish@gmail.com", "nvfkvbjssumtvhiv");
+		t.connect("smtp.gmail.com", "Enter Sender Mail", "Sender Mail Password");
 		t.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
 		t.close();
 		JOptionPane.showMessageDialog(null , "Mail sent successfully, Enter the OTP in OTP TextFIELD.");
